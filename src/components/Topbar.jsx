@@ -1,4 +1,7 @@
+import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
+
 
 const Topbar = ({ cartCount }) => (
   <div style={{
@@ -10,7 +13,7 @@ const Topbar = ({ cartCount }) => (
     color: 'white'
   }}>
     <div style={{ display: 'flex', alignItems: 'center' }}>
-      <img src="https://source.unsplash.com/40x40/?shopping" alt="logo" />
+      <img src={logo} alt="logo" style={{ width: '40px', height: '40px' }} />
       <span style={{ marginLeft: '10px', fontWeight: 'bold', fontSize: '20px' }}>Shopmate</span>
     </div>
     <div>
